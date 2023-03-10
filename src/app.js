@@ -11,7 +11,7 @@ Licenc: GNU GPL
 
 const bikes = document.querySelector("#bikes");
 const bikesArray = [
-    {name: "cassis", wheel: 28, usage: "offroad", price: 557900},
+    {name: "Cassis", wheel: 28, usage: "offroad", price: 557900},
     {name: "Alboin 900", wheel: 28, usage: "trekking", price: 519900},
     {name: "Asgard", wheel: 29, usage: "technikás utak", price: 519900},
     {name: "Ruga", wheel: 29, usage: "hegyi", price: 372900},
@@ -30,7 +30,7 @@ bikesArray.forEach((bike) => {
     tdName.textContent = bike.name;
     tdWheel.textContent = bike.wheel;
     tdUsage.textContent = bike.usage;
-    tdPrice.textContent = bike.price;
+    tdPrice.textContent = bike.price + ".-";
 
     bikes.append(tr);
     tr.append(tdName);

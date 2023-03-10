@@ -16,7 +16,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    background-color: #eee;
 }
 
 .container {
@@ -24,5 +24,60 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 2em;
-    background-color: #ddd;
+    letter-spacing: 0.1em;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    height: 1em;
+}
+h1{
+    display: inline-block;
+}
+table {
+    width: 100%;
+    font-weight: bold;
+}
+table, td, tr, th {
+    padding: 0.5em;
+}
+td, th {
+    width: 25%;
+}
+th {
+    background-color: #777;
+    color: #eee;
+}
+tr:nth-child(even){
+    background-color: #bbb;
+}
+tr:nth-child(odd){
+    background-color: #ccc;
+}
+tr:hover{
+    color: #fff;
+}
+td:last-child{
+    text-align: end;
+}
+footer{
+    padding: 0 1em;
+    text-align: left;
+}
+footer p {
+    width: 50%;
+    margin-left: 50%;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-style: italic;
+    line-height: 1.5em; 
+}
+footer p:last-child{
+    text-align: right;
+    padding: 0;
+    color: #000;
 }
